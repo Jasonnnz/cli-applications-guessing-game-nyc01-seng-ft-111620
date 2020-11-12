@@ -1,6 +1,6 @@
 # Code your solution here!
 def run_guessing_game
-  number = rand(1..6)
+  number = rand(1..6).to_s
   puts "Guess a number 1-6"
   input = gets.chomp
   # while input != "exit" do
@@ -13,5 +13,12 @@ def run_guessing_game
   #   end
   # end
   # puts "Goodbye!"
+  if input == "exit"
+    puts "Goodbye!"
+  elsif input == number
+    puts "You guessed the correct number!"
+  else
+    puts "Sorry! The computer guesssed #{number}."
+  end
 end
   
