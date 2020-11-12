@@ -12,7 +12,14 @@ def run_guessing_game
     #   input = gets.chomp
     # end
   # end
-  for i 
+  for i in 1..6
+    f input == "exit"
+  #   puts "Goodbye!"
+  # elsif input == number
+  #   puts "You guessed the correct number!"
+  # else
+  #   puts "Sorry! The computer guesssed #{number}."
+  # end
   puts "Goodbye!"
   # if input == "exit"
   #   puts "Goodbye!"
