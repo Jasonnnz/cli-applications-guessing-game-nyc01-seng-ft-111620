@@ -26,5 +26,6 @@ def helper(number)
   else 
     puts "Sorry! The computer guessed #{number}."
     helper(number)
+  end
 end
   
