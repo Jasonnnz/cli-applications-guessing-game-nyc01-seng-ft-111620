@@ -19,6 +19,7 @@ def run_guessing_game
       puts "You guessed the correct number!"
     else
       puts "Sorry! The computer guesssed #{number}."
+      input = gets.chomp
     end
   end
   # if input == "exit"
