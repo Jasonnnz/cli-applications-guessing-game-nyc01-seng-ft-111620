@@ -13,5 +13,13 @@ def run_guessing_game
   #   end
   # end
   # puts "Goodbye!"
+  if input == "exit"
+    puts "Goodbye!"
+  end
+  if input == number.to_s
+    puts "You guessed the correct number!"
+  else
+    puts "Sorry! The computer guessed #{number}."
+  end
 end
   
