@@ -8,6 +8,7 @@ def run_guessing_game
       puts "You guessed the correct number!"
     else
       puts "Sorry! The computer guessed #{number}."
+      put "Guess again"
       input = gets.chomp
     end
   end
