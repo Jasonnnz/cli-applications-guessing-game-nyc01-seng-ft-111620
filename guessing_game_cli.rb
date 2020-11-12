@@ -12,7 +12,7 @@ def run_guessing_game
     #   input = gets.chomp
     # end
   # end
-  
+  for i 
   puts "Goodbye!"
   # if input == "exit"
   #   puts "Goodbye!"
