@@ -2,7 +2,7 @@
 def run_guessing_game
   number = rand(1..6)
   puts "Guess a number 1-6"
-  input = gets.chomp
+  helper(number)
   # while input != "exit" do
   #   if input == number.to_s 
   #     puts "You guessed the correct number!"
@@ -14,5 +14,17 @@ def run_guessing_game
   # end
   # puts "Goodbye!"
   
+end
+
+def helper(number) 
+  input = gets.chomp
+  if input  == "exit"
+    puts "Goodbye!"
+  end
+  if input == number
+    puts "You guessed the correct number!"
+  else 
+    puts "Sorry! The computer guessed #{number}."
+    helper(number)
 end
   
